@@ -35,17 +35,24 @@ A library (pynetflow) for parsing Netflow v5 data and a daemon (pynetflow2graphi
       --nographite, -n      Don't forward to Graphite (print to console)
 
 ## Library Usage (pynetflow.py)
-    import pynetflow # Import the pynetflow library
+    #Import the pynetflow library
+    import pynetflow 
     
-    nf = pynetflow.Netflow(probe_ip_address_string, netflow_raw_data) # Create a pynetflow object. Data should be raw bytes
+    #Create a pynetflow object. Data should be raw bytes
+    nf = pynetflow.Netflow(probe_ip_address_string, netflow_raw_data) 
     
-    nf.header # Dictionary of Netflow header
+    #Dictionary of Netflow header
+    nf.header
     
-    nf.data # List of Netflow data dictionaries
+    #List of Netflow data dictionaries
+    nf.data 
     
-    nf.rawdata # Netflow data in raw byte form
+    #Sensor providing contained data
+    nf.sensor 
     
-    nf.sensor # Sensor providing contained data
+    #Netflow data in raw byte form
+    nf.rawdata 
+    
     
     
     
