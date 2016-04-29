@@ -20,6 +20,10 @@ class Netflow:
                 'sampling_interval': int("0x" + self.rawdata[44:48], 0)
             }
 
+            if self.header['version'] != 5:
+                print "Unsupported Netflow version: %s" % str(self.header['version'])
+                pass
+
             try:
                 tmpdata = self.rawdata[48:]
                 dataList = []
