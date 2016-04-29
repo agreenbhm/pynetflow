@@ -16,16 +16,16 @@ A library (pynetflow) for parsing Netflow v5 data and a daemon (pynetflow2graphi
       --help, -h            show this help message and exit
       
       --interface [INTERFACE], -i [INTERFACE]
-                            Local listening interface IP
+                            Local listening interface IP, default=0.0.0.0
                             
       --localport [LOCALPORT], -p [LOCALPORT]
-                            Local listening port
+                            Local listening port, default=1514
                             
       --graphiteip [GRAPHITEIP], -g [GRAPHITEIP]
-                            Graphite server IP
+                            Graphite server IP, default=127.0.0.1
                             
       --graphiteport [GRAPHITEPORT], -f [GRAPHITEPORT]
-                            Graphite server port
+                            Graphite server port, default=2004
                             
       --subnets [SUBNETS [SUBNETS ...]], -s [SUBNETS [SUBNETS ...]]
                             Subnets to monitor, formatted as: 192.168.0.0/24
