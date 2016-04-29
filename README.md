@@ -1,6 +1,9 @@
 # pynetflow & pynetflow2graphite
 A library (pynetflow) for parsing Netflow v5 data and a daemon (pynetflow2graphite) for forwarding Netflow data to Graphite (or the console).
 
+## Forwarder Dependencies
+    netaddr (install via 'pip install netaddr')
+    
 ## Forwarder Usage (pynetflow2graphite.py)
     pynetflow2graphite.py [-h, --help]
                           [-i, --interface [INTERFACE]]
